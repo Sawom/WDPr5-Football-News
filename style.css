@@ -75,6 +75,7 @@ h1{
 body{
     margin: 0px 0px;
     background-color: #E5E5E5;
+    font-family: 'Lato', sans-serif;
 }
 
 main{
@@ -92,7 +93,7 @@ main{
 .single-player{
     background-color: #FFFFFF;
     width: 330px;
-    height: 530px;
+    height: 545px;
     box-shadow: 2px 2px 2px 2px gray;
     border-radius: 10px;
     margin: 15px;
@@ -186,11 +187,13 @@ p{
     font-weight: 500;
     font-size: 16px;
 }
+/* highlights part end */
 
+/* footer  start */
 footer{
     margin-top: 80px;
     width: 484px;
-    height: 280px;
+    height: 320px;
     background-color: #FFFFFF;
     border-radius: 10px;
 }
@@ -217,3 +220,4 @@ footer img{
     justify-content: space-evenly;
     margin-left: 38px;
 }
+/* footer  end */
