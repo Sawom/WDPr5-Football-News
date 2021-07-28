@@ -52,6 +52,7 @@ nav li{
     font-weight: 600;
     background-color: #E02C6D;
     padding: 10px 24px;
+    border-radius: 10px;
 }
 
 h1{
@@ -155,7 +156,64 @@ p{
 }
 /* video part done */
 
+/* highlights part */
 .headline{
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 700;
+}
+
+.highlights{
+    display: flex;
+    margin-top: 60px;
+}
+
+.highlights img{
+    width: 567px;
+    height: 440px;
+}
+
+.width{
+    width: 50%;
+}
+
+.copa-america{
+    width: 469px;
+    height: 309px;
+    margin-right: 60px;
+}
+
+.paragraph{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+footer{
+    margin-top: 80px;
+    width: 484px;
+    height: 280px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+footer img{
+    width: 262px;
+    height: 110px;
+    margin: 20px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icon-color{
+    font-size: 16px;
+    color: #969BAB;
+}
+
+.finishing{
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 38px;
 }
