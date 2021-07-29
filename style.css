@@ -3,49 +3,40 @@ header{
     background-color: #2D25A0;
     margin-bottom: 60px;
 }
-
 .header-class{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
 }
-
 .header-two{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
-
 .header-image{
     width: 556px;
     height: 438px;
 }
-
 .half-width img:hover{
     transform: translateX(-10%) translateY(-4.5%);
     transition: transform 1.5s ease-in-out ;
 }
-
 .half-width{
     width: 50%;
 }
-
 nav{
     font-size: 16px;
     font-weight: 500;
     color: #FFFFFF;
 }
-
 nav ul{
     display: flex;
 }
-
 nav li{
     list-style: none;
-    margin-right: 38px;
+    margin-right: 35px;
+    margin-bottom: 20px;
 }
-
 .button{
     color: #FFFFFF;
     font-size: 16px;
@@ -54,17 +45,14 @@ nav li{
     padding: 10px 24px;
     border-radius: 10px;
 }
-
 h1{
     color: #FFFFFF;
     font-weight: 700;
     font-size: 60px;
 }
-
 .space{
     padding-left: 10px ;
 }
-
 .margin{
     margin-left: 156px;
     margin-right: 120px;
@@ -77,19 +65,16 @@ body{
     background-color: #E5E5E5;
     font-family: 'Lato', sans-serif;
 }
-
 main{
     flex-direction: column;
     display: flex;
     align-items: center;
     margin-bottom: 50px;
 }
-
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
-
 .single-player{
     background-color: #FFFFFF;
     width: 330px;
@@ -98,22 +83,19 @@ main{
     border-radius: 10px;
     margin: 15px;
 }
-
 .single-player img{
     width: 300px;
     height: 256px;
     padding: 15px;
     border-radius: 10%;
     align-items: center;
+    justify-content: center;
 }
-
 .player-details{
     padding: 20px;
 }
-
 p{
     text-align: justify;
-    font-weight: 500;
 }
 /* 12 players part done */
 
@@ -121,17 +103,16 @@ p{
 .conteiner{
     margin-top: 45px;
     background-color: #FFFFFF;
-    width: 870px;
+    width: 600px;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 3px 3px 3px 3px gray;
+    margin-bottom: 45px;
 }
-
 .align-center{
     text-align: center;
     font-size: 20px;
 }
-
 .form-button{
     color: #FFFFFF;
     font-size: 14px;
@@ -144,80 +125,135 @@ p{
 /* form part done*/
 
 /* video part start */
-.video{
+.video-display{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.single-video{
+    background-color: #FFFFFF;
+    width: 430px;
+    height: 400px;
+    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+}
+.single-video video{
     height: 300px;
     width: 400px;
-}
-
-.video-display{
-    display: flex;
+    align-items: center;
 }
 .video-margin{
     margin: 20px;
 }
 /* video part done */
 
-/* highlights part */
-.headline{
-    font-size: 44px;
-    font-weight: 700;
-}
-
-.highlights{
-    display: flex;
-    margin-top: 60px;
-}
-
-.highlights img{
-    width: 567px;
-    height: 440px;
-}
-
-.width{
-    width: 50%;
-}
-
-.copa-america{
-    width: 469px;
-    height: 309px;
-    margin-right: 60px;
-}
-
-.paragraph{
-    font-weight: 500;
-    font-size: 16px;
-}
-/* highlights part end */
-
 /* footer  start */
 footer{
     margin-top: 80px;
-    width: 484px;
+    width: 400px;
     height: 320px;
     background-color: #FFFFFF;
     border-radius: 10px;
+    align-items: center;
 }
 
 footer img{
-    width: 262px;
+    width: 250px;
     height: 110px;
     margin: 20px;
 }
-
 .icon{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-
 .icon-color{
     font-size: 16px;
     color: #969BAB;
 }
-
 .finishing{
     align-items: center;
     justify-content: space-evenly;
     margin-left: 38px;
 }
 /* footer  end */
+
+/* for phone mandatory and tablet is optional. I tried for tablet device but unable to do that*/
+@media only screen and (max-width:688px){
+    body{
+        width: 100%;
+        margin: auto auto;
+    }
+    .half-width img{
+        margin-right: 60px;
+    }
+    .half-width img:hover{
+        transform: translateX(-10%) translateY(-4.5%);
+        transition: transform 1.5s ease-in-out ;
+    }
+    main{
+        margin-left: 20px ;
+        width: 100%;
+    }
+    header{
+        width: 120%;
+        display: flex;
+        flex-direction: column;
+    }
+    .header-image{
+        width: 329px;
+        height: 259px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .header-two{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+    }
+    .half-width img{
+        margin-top: 36px ;
+        margin-right: 30%;
+    }
+    h1{
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 36px;
+        margin-bottom: 34px;
+        margin-right: 30px;
+    }
+    .players, .video-display {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .single-player {
+        flex-direction: column;
+        width: 100%;
+        padding: 4%;
+    }
+    .single-player img{
+        width: 90%;
+    }
+    video{
+        flex-direction: column;
+        width: 100%;
+    }
+    .video-margin{
+        margin-left: 20%;
+    }
+    .conteiner{
+        width: 100%;
+        margin-left: 20%;
+    }
+    .highlights{
+        grid-template-columns: repeat(1,1fr);  
+        flex-direction: column;
+    }
+    footer{
+        margin-left: 10%;
+        width: 100%;
+    }
+}
